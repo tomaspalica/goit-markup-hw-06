@@ -563,6 +563,66 @@
             <use href="./images/icons.svg#icon-x"></use>
           </svg>
         </button>
+        <div class="modal-content">
+          <div class="modal-info">Zostaw swoje dane w formularzu poniżej</div>
+          <form class="modal-form">
+            <!-- ------------ -->
+            <fieldset class="modal-fieldset">
+              <label class="modal-label" for="name"> Imie</label>
+              <svg class="modal-icons" class="name" width="12px" height="12px">
+                <use href="./images/icons.svg#name"></use>
+              </svg>
+              <input
+                class="modal-input"
+                type="text"
+                name="username"
+                id="name"
+              />
+            </fieldset>
+            <!-- ------------ -->
+            <fieldset class="modal-fieldset">
+              <label class="modal-label" for="telefon"> Telefon</label>
+              <svg class="modal-icons" width="12px" height="12px">
+                <use href="./images/icons.svg#phone-number"></use>
+              </svg>
+              <input
+                class="modal-input"
+                type="tel"
+                name="phone_number"
+                id="Telefon"
+              />
+            </fieldset>
+            <!-- ------------ -->
+            <fieldset class="modal-fieldset">
+              <label class="modal-label" for="Email"> Email</label>
+              <svg class="modal-icons" width="12px" height="12px">
+                <use href="./images/icons.svg#mail"></use>
+              </svg>
+              <input class="modal-input" type="email" name="email" id="Email" />
+            </fieldset>
+            <!-- ------------ -->
+            <fieldset class="modal-fieldset-comment">
+              <label class="modal-label-comment"> Komentarz</label>
+              <textarea
+                class="modal-textarea-comment"
+                type="text"
+                name="comment"
+                placeholder="Wprowadź tekts"
+              ></textarea>
+            </fieldset>
+            <!-- ------------ -->
+
+            <label class="modal-checkbox-wraper">
+              <input class="modal-checkbox" type="checkbox" /> Oświadczam iż
+              akceptuję <a>Regulamin</a> i <a>Politykę Prywatności.</a>
+              <svg class="checkmark-icon" width="11px" height="8px">
+                <use href="./images/icons.svg#check"></use>
+              </svg>
+              <span class="modal-checkmark"></span>
+            </label>
+            <button class="model-button"></button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./modal.js"></script>
