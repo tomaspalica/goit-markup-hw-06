@@ -553,18 +553,29 @@
               </ul>
             </div>
             <div class="_footer-registration">
-              <h4 class="_footer-registration-info">
-                Zapisz się do newslettera
-              </h4>
-              <fieldset class="_footer-registration-fieldset">
-                <input
-                  class="_footer-registration-input"
-                  type="email"
-                  name="email"
-                  id="Email"
-                  placeholder="Email"
-                />
-              </fieldset>
+              <form class="_footer-registration-form">
+                <div class="_footer-registration-email-wrapper">
+                  <fieldset class="_footer-registration-fieldset">
+                    <label class="_footer-registration-info">
+                      Zapisz się do newslettera</label
+                    >
+                    <input
+                      class="_footer-registration-input"
+                      type="email"
+                      name="email"
+                      id="Email"
+                      placeholder="Email"
+                    />
+                  </fieldset>
+
+                  <button class="_footer-registration-button" type="submit">
+                    Zapisz się
+                    <svg width="24px" height="24px">
+                      <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -636,7 +647,7 @@
             </label>
           </form>
 
-          <button class="model-button">Wyślij</button>
+          <button class="model-button" type="submit">Wyślij</button>
         </div>
       </div>
     </div>

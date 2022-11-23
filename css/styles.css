@@ -760,10 +760,11 @@ figure {
 }
 .modal-fieldset:has(input:focus-within) .modal-icons {
   fill: #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-fieldset:focus-within ~ .modal-icons {
+/* .modal-fieldset:focus-within .modal-icons {
   fill: #2196f3;
-}
+} */
 .modal-fieldset {
   position: relative;
 
@@ -893,13 +894,63 @@ figure {
 }
 ._footer-registration {
   display: flex;
+  margin-top: 48px;
+  margin-left: 68px;
+}
+._footer-registration-info {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  position: absolute;
+  color: #ffffff;
+  top: -40px;
 }
 ._footer-registration-fieldset {
-  width: 358px;
-  height: 50px;
   border-radius: 4px;
   border-color: rgba(255, 255, 255, 0.3);
+  margin: 0px;
+  height: 100%;
+  padding: 0px;
+  width: 358px;
+  height: 50px;
+  position: relative;
 }
-._footer-registration-input{
-  
+._footer-registration-input {
+  width: 358px;
+  height: 47px;
+  border: 0;
+  background: transparent;
+  outline: 0;
+  color: rgba(255, 255, 255, 0.3);
+}
+._footer-registration-button {
+  width: 200px;
+  height: 50px;
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px;
+}
+
+._footer-registration-email-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 570px;
 }
