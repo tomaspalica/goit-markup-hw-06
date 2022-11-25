@@ -762,9 +762,14 @@ figure {
   fill: #2196f3;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .modal-fieldset:focus-within .modal-icons {
+.modal-fieldset:focus-within .modal-icons {
   fill: #2196f3;
-} */
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-fieldset:focus-within {
+  border: 1px solid #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .modal-fieldset {
   position: relative;
 
@@ -775,6 +780,7 @@ figure {
   border-radius: 4px;
   margin-left: 26px;
   margin-right: 26px;
+  border-width: 1px;
 }
 .modal-label {
   position: absolute;
@@ -803,9 +809,14 @@ figure {
   margin-left: 15px;
   fill: #212121;
 }
+.modal-fieldset-comment:focus-within {
+  border: 1px solid #2196f3;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-fieldset-comment {
   border-radius: 4px;
-
+  border-width: 1px;
   margin-left: 26px;
   margin-right: 26px;
   position: relative;
